@@ -111,6 +111,10 @@ impl<'a> Name<'a> {
       buf_i: self.start,
     }
   }
+
+  pub fn start(&self) -> usize {
+    self.start
+  }
 }
 
 impl fmt::Display for Name<'_> {
